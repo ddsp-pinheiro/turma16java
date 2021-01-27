@@ -21,7 +21,7 @@ public class Exercicio6
 		System.out.println("Digite y do seu segundo ponto: ");
 		y2= ler.nextInt();
 		
-		d= Math.sqrt(Math.pow((x2-x1), 2)+Math.pow((y2-y1), 2));
+		d= Math.sqrt(Math.pow((x2-x1), 2)+Math.pow((y2-y1),2));
 		
 		System.out.println("Resultado: "+d);
 		
