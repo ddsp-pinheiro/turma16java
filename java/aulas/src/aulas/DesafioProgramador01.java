@@ -28,7 +28,6 @@ public class DesafioProgramador01
 		else
 		{
 			System.out.println("O numero digitado é impar!!!");
-			
 		}
 		
 	}
