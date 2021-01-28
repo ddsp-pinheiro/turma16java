@@ -6,13 +6,13 @@ public class Lista2Exercicio2
 {
 	public static void main(String[] args) {
 		
+		Scanner ler = new Scanner (System.in);
 		int s1=0, s2=0,s3=0;
 		int n1, n2, n3;
 		// n1= primeiro numero / n2 = segundo numero / n3= terceiro numero
 		// s1 = sai em primeiro/ s2 = sai em segundo/ s3 sai em terceiro
-		Scanner ler = new Scanner (System.in);
 		
-		System.out.println("\t\t\t\t\t NUMERO EM ORDEM CRESCENTE \n Digite seu primeiro numero:");
+		System.out.println("\t\t\t\t\t NUMEROS EM ORDEM CRESCENTE \nDigite seu primeiro numero:");
 		n1 =ler.nextInt();
 		
 		System.out.println("Digite seu segundo numero: ");
@@ -55,6 +55,20 @@ public class Lista2Exercicio2
 		{
 			s1=n3;
 			if(n1<n2)
+			{
+				s2=n1;
+				s3=n2;
+			}
+			else
+			{
+				s2=n2;
+				s3=n1;
+			}
+		}
+		else if (n3>n1 && n3>n2)
+		{
+			s1=n3;
+			if(n2<n1)
 			{
 				s2=n1;
 				s3=n2;
