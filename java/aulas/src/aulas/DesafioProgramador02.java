@@ -13,7 +13,7 @@ public class DesafioProgramador02
 		//d) percentual de pessoas com salário até R$100,00.
 		Scanner ler = new Scanner (System.in);
 		
-		final int habitantes = 5;
+		final int habitantes = 2;
 		
 		double salario = 0.00;
 		int numeroFilhos = 0;
