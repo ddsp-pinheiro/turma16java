@@ -135,7 +135,7 @@ public class DesafioProgramador04Conta
 				+"\nVALOR DE EMPRESTIMO A PAGAR: "+(10000-valorEmprestimoI)+"\n");
 		for(int x=0;x<qnt;x++)
 		{
-			System.out.println("TRANSA플O - "+(x+1)+" :"+cd[x+1]+"\nVALOR: "+valor[x+1]+"\t DESCRI플O: "+descricao[x+1]+"\n");
+			System.out.println("TRANSA플O - "+(x+1)+": "+cd[x+1]+"\nVALOR: "+valor[x+1]+"\t DESCRI플O: "+descricao[x+1]+"\n");
 		}
 		System.out.println("====================================");
 		return;
