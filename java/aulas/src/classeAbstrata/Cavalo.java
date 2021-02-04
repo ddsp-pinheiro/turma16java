@@ -12,7 +12,9 @@ public class Cavalo extends Animal
 		
 		return " hiin in in hinir";
 	}
+	
+	public void corre() {
+		
+	}
 
-	
-	
 }
