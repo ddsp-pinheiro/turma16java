@@ -2,26 +2,26 @@ package cadFun;
 
 public class Terceiro extends Empregado
 {
-	private double acrecimo;
+	private double acrescimo;
 	
-	public Terceiro(String nome, int matricula, int horas, double valorHora) {
+	public Terceiro(String nome, int matricula, int horas, double valorHora, double acrescimo) {
 		super(nome, matricula, horas, valorHora);
-		this.acrecimo=acrecimo;
+		this.acrescimo=acrescimo;
 	}
 	//============================================================================
 
 	public double getAcrecimo() {
-		return acrecimo;
+		return acrescimo;
 	}
 
 	public void setAcrecimo(double acrecimo) {
-		this.acrecimo = acrecimo;
+		this.acrescimo = acrecimo;
 	}
 	//============================================================================
 
 	@Override
 	public double salario() {
-		return super.horas*(super.valorHora+(super.valorHora*this.acrecimo));
+		return super.horas*(super.valorHora+(super.valorHora*this.acrescimo));
 	
 	}
 
