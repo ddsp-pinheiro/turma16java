@@ -8,44 +8,6 @@ public class Produto {
 	private int qtdCompra;
 	private double precoTotalProduto;
 	
-	public int getQtdCompra() {
-		return qtdCompra;
-	}
-
-	public void setQtdCompra(int qtdCompra) {
-		this.qtdCompra = qtdCompra;
-	}
-
-	public void removerItem() {
-		qtdEstoque += qtdCompra;
-		qtdCompra = 0;
-		precoTotalProduto = 0;
-	}
-	
-	public void comprar(int qtdCompra) {
-		this.qtdCompra = qtdCompra;
-		precoTotalProduto = this.qtdCompra * this.preco;
-		qtdEstoque -= qtdCompra;
-	}
-	
-	
-	public double getPrecoTotalProduto() {
-		return precoTotalProduto;
-	}
-	
-	public void getProduto() {
-		System.out.printf("   %d\t%s   \tR$%.2f    \t%d\n", this.getCodigo(), this.getDescricao(), this.getPreco(), this.getQtdEstoque());
-	}
-	public void getComprados() {
-		System.out.printf("   %d\t%s   R$%.2f    %d\n", this.getCodigo(), this.getDescricao(), this.getPreco(), this.qtdCompra);
-	}
-	
-	
-	public Produto(int codigo) {
-		super();
-		this.codigo = codigo;
-	}
-
 	public Produto(int codigo, String descricao, double preco, int qtdEstoque) {
 		super();
 		this.codigo = codigo;
@@ -61,6 +23,40 @@ public class Produto {
 		this.qtdCompra = qtdCompra;
 		this.precoTotalProduto = this.qtdCompra * this.preco;
 	}
+	public void removerItem() {
+		qtdEstoque += qtdCompra;
+		qtdCompra = 0;
+		precoTotalProduto = 0;
+	}
+	
+	
+	public void comprar(int qtdCompra) {
+		this.qtdCompra = qtdCompra;
+		precoTotalProduto = this.qtdCompra * this.preco;
+		qtdEstoque -= qtdCompra;
+	}
+	
+	public void getProduto() {
+		System.out.printf("   %d\t%s   \tR$%.2f    \t%d\n", this.getCodigo(), this.getDescricao(), this.getPreco(), this.getQtdEstoque());
+	}
+	
+	public void getComprados() {
+		System.out.printf("   %d\t%s   R$%.2f    %d     R$%.2f\n", this.getCodigo(), this.getDescricao(), this.getPreco(), this.qtdCompra, this.getPrecoTotalProduto());
+	}
+	
+	public int getQtdCompra() {
+		return qtdCompra;
+	}
+
+	public void setQtdCompra(int qtdCompra) {
+		this.qtdCompra = qtdCompra;
+	}
+
+	
+	public double getPrecoTotalProduto() {
+		return precoTotalProduto;
+	}
+
 	public int getCodigo() {
 		return codigo;
 	}
